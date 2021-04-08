@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rbEnemy;
-    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject player, normalSpawner, rageSpawner;
     [SerializeField] private float speed = 1f, jumpForce = 1f, checkGroundRadius;
     [SerializeField] private Transform groundPoint;
     [SerializeField] private LayerMask groundLayer;
@@ -63,7 +63,19 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            normalSpawner.SetActive(false);
+            rageSpawner.SetActive(true);
             Jump();
+        }
+        
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            FindObjectOfType<BarrelSpawner>().StopSpawning();
+            normalSpawner.SetActive(false);
+            rageSpawner.SetActive(false);
         }
     }
 }
