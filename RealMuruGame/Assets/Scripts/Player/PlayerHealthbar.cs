@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealthBar : MonoBehaviour
+public class PlayerHealthbar : MonoBehaviour
 {
-    [SerializeField] private GameObject Enemy;
+    [SerializeField] private GameObject player;
     public int maxHealth = 100, currentHealth;
 
-    public HealthBar healthBar;
+    public HealthBar playerHealthBar;
 
     private void Start()
     {
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        playerHealthBar.SetMaxHealth(maxHealth);
 
     }
 
@@ -27,19 +27,19 @@ public class EnemyHealthBar : MonoBehaviour
     private void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        playerHealthBar.SetHealth(currentHealth);
 
     }
 
-    
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Bottle"))
+        if (collision.collider.CompareTag("Barrel"))
         {
             TakeDamage(10);
 
         }
-        
+
     }
 }
