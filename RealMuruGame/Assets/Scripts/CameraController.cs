@@ -15,7 +15,7 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        PlayerPrefs.GetInt("CharacterIndex");
+        //PlayerPrefs.GetInt("CharacterIndex");
         float width = Camera.main.orthographicSize * Screen.width / Screen.height;
         minX = LayerManager.instance.worldEdgeLeft.position.x + width;
         maxX = LayerManager.instance.worldEdgeRight.position.x - width;

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] characters;
-    private int characterIndex;
+    /*[SerializeField] private GameObject[] characters;
+    //private int characterIndex;
 
     public void ChangeCharacter(int index)
     {
@@ -14,17 +14,17 @@ public class MenuManager : MonoBehaviour
         {
             characters[i].SetActive(false);
         }
-        this.characterIndex = index;
+        //this.characterIndex = index;
         characters[index].SetActive(true);
-    }
+    }*/
 
     public void StartGameSamu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         //PlayerPrefs.SetInt("CharacterIndex", characterIndex);
     }
     public void StartGameTaneli()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }

@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ChooseYourCharacter.unity
-    guid: 7b2cd9ec3dbaa400db6771d9be1f55ba
+    path: Assets/Scenes/StartScreen.unity
+    guid: 6e1ce3b054e334b00ad4d9ed3d71cc54
+  - enabled: 1
+    path: Assets/Scenes/PlayerSelection.unity
+    guid: 13129fa08bd3e431896fda6f857d9a63
   - enabled: 1
     path: Assets/Scenes/GameLevelSamu.unity
     guid: 8850f4b76c70f41f9ab7e2ad1deabbf6
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InSideScene.unity
     guid: c3ce802a2f893488ca8f1118cdf2b738
+  - enabled: 1
+    path: Assets/Scenes/AdScreen.unity
+    guid: bbe3c75d784f44fb997ed87be46becc7
   m_configObjects: {}
