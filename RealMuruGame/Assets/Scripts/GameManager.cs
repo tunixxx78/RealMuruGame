@@ -10,9 +10,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void GoToAdvertisement()
+    public void GoToNextScene()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     

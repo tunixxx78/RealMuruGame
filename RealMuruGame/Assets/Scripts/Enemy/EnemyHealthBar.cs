@@ -22,6 +22,18 @@ public class EnemyHealthBar : MonoBehaviour
         {
             Destroy(gameObject, 1f);
         }
+        if (currentHealth <= 50f)
+        {
+            FindObjectOfType<EnemyController>().JumpHigh();
+        }
+        if (currentHealth <= 20f)
+        {
+            FindObjectOfType<EnemyController>().RageEnemy();
+        }
+        else
+        {
+            return;
+        }
     }
 
     private void TakeDamage(int damage)

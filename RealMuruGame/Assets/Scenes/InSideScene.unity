@@ -511,7 +511,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1500323056}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: GoToAdvertisement
+        m_MethodName: GoToNextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
