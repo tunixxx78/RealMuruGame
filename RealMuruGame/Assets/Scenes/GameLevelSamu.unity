@@ -323,6 +323,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7338571761603753511, guid: f400db570a3014d73b2c623b6e1bb4b3, type: 3}
+      propertyPath: launchForce
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338571761603753511, guid: f400db570a3014d73b2c623b6e1bb4b3, type: 3}
+      propertyPath: bottleLifeSpawn
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f400db570a3014d73b2c623b6e1bb4b3, type: 3}
 --- !u!1001 &686452651
@@ -695,7 +703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3239525735270002694, guid: 2f8c3abc8910c47e0ad6b4d0dec1f2e5, type: 3}
       propertyPath: jumpForce
-      value: 2.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3239525735525979907, guid: 2f8c3abc8910c47e0ad6b4d0dec1f2e5, type: 3}
       propertyPath: m_LocalPosition.y

@@ -34,17 +34,19 @@ public class PlayerMovements : MonoBehaviour
         if (Input.GetAxis("Horizontal") > 0)
         {
             characterScale.x = 1f;
+            
         }
         if (Input.GetAxis("Horizontal") < 0)
         {
             characterScale.x = -1f;
+            
         }
         transform.localScale = characterScale;
     }
 
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             rbPlayer.velocity = new Vector2(rbPlayer.velocity.x, jumpForce);
         }
@@ -75,7 +77,7 @@ public class PlayerMovements : MonoBehaviour
         {
             rbPlayer.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
         }
-        if (rbPlayer.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        if (rbPlayer.velocity.y > 0 && !Input.GetKey(KeyCode.W))
         {
             rbPlayer.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
         }

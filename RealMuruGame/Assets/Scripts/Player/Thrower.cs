@@ -8,6 +8,7 @@ public class Thrower : MonoBehaviour
     [SerializeField] private GameObject bottle, point;
     [SerializeField] private float launchForce, bottleLifeSpawn = 0.5f, spaceBetweenPoints, fireRate = 1f;
     [SerializeField] private Transform shotPoint;
+    
 
     private GameObject[] points;
     [SerializeField] private int numberOfPoints;
@@ -16,21 +17,26 @@ public class Thrower : MonoBehaviour
 
     private void Start()
     {
-        points = new GameObject[numberOfPoints];
+        /*points = new GameObject[numberOfPoints];
         for (int i = 0; i<numberOfPoints; i++)
         {
             points[i] = Instantiate(point, shotPoint.position, Quaternion.identity);
-        }
+        }*/
     }
 
     private void Update()
     {
-        Vector2 bottlePosition = transform.position;
+        /*Vector2 bottlePosition = transform.position;                              //Tällä ampuminen hiiren osoittamaan paikkaan.
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = mousePosition - bottlePosition;
         transform.up = direction;
 
         if (Input.GetMouseButtonDown(0) && Time.time >= nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Shoot();
+        }*/
+        if (Input.GetKey(KeyCode.Space) && Time.time >= nextFire)
         {
             nextFire = Time.time + fireRate;
             Shoot();
@@ -41,10 +47,20 @@ public class Thrower : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    public void Shoot()
     {
         GameObject newBottle = Instantiate(bottle, shotPoint.position, shotPoint.rotation);
-        newBottle.GetComponent<Rigidbody2D>().velocity = transform.up * launchForce;
+        newBottle.GetComponent<Rigidbody2D>().velocity = (transform.right + Vector3.up) * launchForce;
+        if (newBottle)
+        {
+            Destroy(newBottle, bottleLifeSpawn);
+        }
+    }
+
+    public void ShootLeft()
+    {
+        GameObject newBottle = Instantiate(bottle, shotPoint.position, shotPoint.rotation);
+        newBottle.GetComponent<Rigidbody2D>().velocity = (-transform.right + Vector3.up) * launchForce;
         if (newBottle)
         {
             Destroy(newBottle, bottleLifeSpawn);
