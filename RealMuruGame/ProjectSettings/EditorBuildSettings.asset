@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Kysymys3.unity
     guid: 48598b022b8f744bbb973226070683ce
   - enabled: 1
+    path: Assets/Scenes/Table.unity
+    guid: 932ccf2f71a954a5aa144cd0d697e59c
+  - enabled: 1
     path: Assets/Scenes/AdScreen.unity
     guid: bbe3c75d784f44fb997ed87be46becc7
   - enabled: 0
