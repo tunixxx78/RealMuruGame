@@ -41,10 +41,10 @@ public class Thrower : MonoBehaviour
             nextFire = Time.time + fireRate;
             Shoot();
         }
-        for (int i = 0; i < numberOfPoints; i++)
+        /*for (int i = 0; i < numberOfPoints; i++)
         {
             points[i].transform.position = PointPosition(i * spaceBetweenPoints);
-        }
+        }*/
     }
 
     public void Shoot()
