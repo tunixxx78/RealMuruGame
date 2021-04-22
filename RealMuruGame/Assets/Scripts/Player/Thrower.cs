@@ -17,6 +17,7 @@ public class Thrower : MonoBehaviour
 
     private void Start()
     {
+        
         /*points = new GameObject[numberOfPoints];
         for (int i = 0; i<numberOfPoints; i++)
         {
@@ -36,7 +37,7 @@ public class Thrower : MonoBehaviour
             nextFire = Time.time + fireRate;
             Shoot();
         }*/
-        if (Input.GetKey(KeyCode.Space) && Time.time >= nextFire)
+        if (Input.GetKey(KeyCode.Space) && Time.time >= nextFire && Input.GetAxis("Horizontal") > 0)
         {
             nextFire = Time.time + fireRate;
             Shoot();
