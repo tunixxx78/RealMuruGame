@@ -45,6 +45,9 @@ TagManager:
   - name: Backround
     uniqueID: 3465765577
     locked: 0
+  - name: Backround Props
+    uniqueID: 748283541
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -53,4 +56,7 @@ TagManager:
     locked: 0
   - name: MoovableObjects
     uniqueID: 1545093925
+    locked: 0
+  - name: Foreground
+    uniqueID: 4245343735
     locked: 0

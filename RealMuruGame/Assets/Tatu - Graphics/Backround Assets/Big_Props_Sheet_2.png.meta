@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: c2f983555ee343340bd483e4991b79f4
+guid: 985fc16986d58f349811b69c13c3ae39
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1735316135993538585
-    second: Wall
+      213: 3674216084911418004
+    second: Stone Pillar
   - first:
-      213: -6877413749751015784
-    second: Platform
+      213: -5728519441156833491
+    second: Metal Pole
   - first:
-      213: -395055564724966879
-    second: Ground Floor
+      213: 3595415146690133507
+    second: Door_metal Frame
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,10 +52,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,64 +112,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wall
+      name: Stone Pillar
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1012
-        width: 2024
-        height: 1022
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 5
+        y: 7
+        width: 362
+        height: 2041
+      alignment: 9
+      pivot: {x: 0.5, y: 0.00558103}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 918f5e2e4d4151810800000000000000
-      internalID: 1735316135993538585
+      spriteID: 49aeb29ff007df230800000000000000
+      internalID: 3674216084911418004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform
+      name: Metal Pole
       rect:
         serializedVersion: 2
-        x: 15
-        y: 760
-        width: 2008
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 429
+        y: 11
+        width: 278
+        height: 2036
+      alignment: 9
+      pivot: {x: 0.5295726, y: 0.019487249}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89614b8f1a48e80a0800000000000000
-      internalID: -6877413749751015784
+      spriteID: d2f7de45be53080b0800000000000000
+      internalID: -5728519441156833491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ground Floor
+      name: Door_metal Frame
       rect:
         serializedVersion: 2
-        x: 7
-        y: 142
-        width: 2031
-        height: 594
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 847
+        y: 0
+        width: 802
+        height: 1168
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.026974466}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12ae6069e0b748af0800000000000000
-      internalID: -395055564724966879
+      spriteID: 30e368ec60b75e130800000000000000
+      internalID: 3595415146690133507
       vertices: []
       indices: 
       edges: []
