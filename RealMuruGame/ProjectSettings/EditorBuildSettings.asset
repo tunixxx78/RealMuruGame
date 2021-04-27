@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameLevelTaneli.unity
     guid: 2e91d9fc6a8b649b88700861de66c40f
   - enabled: 1
+    path: Assets/Scenes/Table.unity
+    guid: 932ccf2f71a954a5aa144cd0d697e59c
+  - enabled: 1
     path: Assets/Scenes/InSideScene.unity
     guid: c3ce802a2f893488ca8f1118cdf2b738
   - enabled: 1
@@ -29,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kysymys3.unity
     guid: 48598b022b8f744bbb973226070683ce
-  - enabled: 1
-    path: Assets/Scenes/Table.unity
-    guid: 932ccf2f71a954a5aa144cd0d697e59c
   - enabled: 1
     path: Assets/Scenes/AdScreen.unity
     guid: bbe3c75d784f44fb997ed87be46becc7

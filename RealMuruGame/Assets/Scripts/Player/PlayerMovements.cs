@@ -17,14 +17,14 @@ public class PlayerMovements : MonoBehaviour
         Move();
         Jump();
         CheckIfGrounded();
-        BetterJump();
+        //BetterJump();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
         }
     }
 
-    private void Move()
+    public void Move()
     {
         float x = Input.GetAxisRaw("Horizontal");
         float moveBy = x * speed;
@@ -42,6 +42,10 @@ public class PlayerMovements : MonoBehaviour
             
         }
         transform.localScale = characterScale;
+    }
+    public void DirectionOfCharacter()
+    {
+
     }
 
     private void Jump()

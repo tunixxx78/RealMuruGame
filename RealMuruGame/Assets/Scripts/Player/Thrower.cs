@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Thrower : MonoBehaviour
 {
-    [SerializeField] private GameObject bottle, point;
+    [SerializeField] private GameObject bottle, point, canShoot, player;
     [SerializeField] private float launchForce, bottleLifeSpawn = 0.5f, spaceBetweenPoints, fireRate = 1f;
     [SerializeField] private Transform shotPoint;
     
@@ -17,6 +17,7 @@ public class Thrower : MonoBehaviour
 
     private void Start()
     {
+        
         
         /*points = new GameObject[numberOfPoints];
         for (int i = 0; i<numberOfPoints; i++)
@@ -37,10 +38,15 @@ public class Thrower : MonoBehaviour
             nextFire = Time.time + fireRate;
             Shoot();
         }*/
-        if (Input.GetKey(KeyCode.Space) && Time.time >= nextFire && Input.GetAxis("Horizontal") > 0)
+        if (Input.GetKey(KeyCode.Space) && Time.time >= nextFire && player.transform.localScale.x != -1f) //Input.GetAxis("Horizontal") > -1)
         {
+            canShoot.SetActive(false);
             nextFire = Time.time + fireRate;
             Shoot();
+        }
+        if (Time.time >= nextFire)
+        {
+            canShoot.SetActive(true);
         }
         /*for (int i = 0; i < numberOfPoints; i++)
         {
