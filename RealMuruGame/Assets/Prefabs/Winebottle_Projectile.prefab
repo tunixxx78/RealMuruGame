@@ -165,4 +165,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbBottle: {fileID: 1173640458754395400}
   rotationSpeed: 1
-  torque: 5
+  torque: 15
