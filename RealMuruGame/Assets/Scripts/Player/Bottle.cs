@@ -5,11 +5,14 @@ using UnityEngine;
 public class Bottle : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rbBottle;
+    [SerializeField] private float rotationSpeed = 4f, torque = 1f;
 
     private void Update()
     {
         float angle = Mathf.Atan2(rbBottle.velocity.y, rbBottle.velocity.x * Mathf.Rad2Deg);
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        //transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        transform.Rotate(new Vector3(0, 0, -rotationSpeed));
+        rbBottle.AddTorque(-torque * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -10,6 +10,7 @@ public class PlayerMovements : MonoBehaviour
     [SerializeField] private float speed = 1f, jumpForce = 1f, checkGroundRadius, lowJumpMultiplier = 2f, fallMultiplier = 2.5f;
     [SerializeField] private Transform groundPoint;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Animator playerAnimator;
     private bool isGrounded = false;
 
     private void Update()
@@ -30,9 +31,12 @@ public class PlayerMovements : MonoBehaviour
         float moveBy = x * speed;
         rbPlayer.velocity = new Vector2(moveBy, rbPlayer.velocity.y);
 
+        playerAnimator.SetBool("Run", x != 0f);
+
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") > 0)
         {
+           
             characterScale.x = 1f;
             
         }
@@ -52,6 +56,7 @@ public class PlayerMovements : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
+            playerAnimator.SetTrigger("Jump");
             rbPlayer.velocity = new Vector2(rbPlayer.velocity.x, jumpForce);
         }
         if (isGrounded == false)
@@ -67,6 +72,7 @@ public class PlayerMovements : MonoBehaviour
 
         if (colliders != null)
         {
+            
             isGrounded = true;
         }
         else
@@ -101,5 +107,9 @@ public class PlayerMovements : MonoBehaviour
             enemyHealthBar.SetActive(false);
         }
         
+    }
+    private void Shoot()
+    {
+        FindObjectOfType<Thrower>().Shoot();
     }
 }

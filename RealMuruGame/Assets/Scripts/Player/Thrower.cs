@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class Thrower : MonoBehaviour
 {
-    [SerializeField] private GameObject bottle, point, canShoot, player;
+    [SerializeField] private GameObject bottle, point, canShoot, cantShoot, player;
     [SerializeField] private float launchForce, bottleLifeSpawn = 0.5f, spaceBetweenPoints, fireRate = 1f;
     [SerializeField] private Transform shotPoint;
+    [SerializeField] private Animator attackAnimator;
     
 
     private GameObject[] points;
@@ -40,12 +41,15 @@ public class Thrower : MonoBehaviour
         }*/
         if (Input.GetKey(KeyCode.Space) && Time.time >= nextFire && player.transform.localScale.x != -1f) //Input.GetAxis("Horizontal") > -1)
         {
+            attackAnimator.SetTrigger("Attack");
             canShoot.SetActive(false);
+            cantShoot.SetActive(true);
             nextFire = Time.time + fireRate;
-            Shoot();
+            //Shoot();
         }
         if (Time.time >= nextFire)
         {
+            cantShoot.SetActive(false);
             canShoot.SetActive(true);
         }
         /*for (int i = 0; i < numberOfPoints; i++)
@@ -56,8 +60,9 @@ public class Thrower : MonoBehaviour
 
     public void Shoot()
     {
+        //attackAnimator.SetTrigger("Attack");
         GameObject newBottle = Instantiate(bottle, shotPoint.position, shotPoint.rotation);
-        newBottle.GetComponent<Rigidbody2D>().velocity = (transform.right + Vector3.up) * launchForce;
+        newBottle.GetComponent<Rigidbody2D>().velocity = (-transform.right + Vector3.up) * launchForce;
         if (newBottle)
         {
             Destroy(newBottle, bottleLifeSpawn);
