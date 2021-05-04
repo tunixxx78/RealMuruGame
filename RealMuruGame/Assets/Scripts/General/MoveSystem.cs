@@ -59,7 +59,8 @@ public class MoveSystem : MonoBehaviour
         }
         else
         {
-            this.transform.localPosition = new Vector3(resetPosition.y, resetPosition.y, resetPosition.z);
+              this.transform.localPosition = resetPosition;
+          //  this.transform.localPosition = new Vector3(resetPosition.y, resetPosition.y, resetPosition.z);
         }
         
     }

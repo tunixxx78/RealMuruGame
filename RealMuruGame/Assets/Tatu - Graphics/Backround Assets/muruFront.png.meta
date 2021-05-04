@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 985fc16986d58f349811b69c13c3ae39
+guid: edba5b4400eb3774499ec0b2df980eb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3674216084911418004
-    second: Stone Pillar
+      213: -6472356511412550249
+    second: Murufront_Pillar
   - first:
-      213: -5728519441156833491
-    second: Metal Pole
+      213: 5515981177300428329
+    second: MuruWindowBottles
   - first:
-      213: 3595415146690133507
-    second: Door_metal Frame
+      213: 3582062381028858107
+    second: muruFront_Granite
   - first:
-      213: 5248297485837075341
-    second: MuruFrontDoor
+      213: 6977134813419168678
+    second: muru_window
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,99 +101,99 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stone Pillar
+      name: Murufront_Pillar
       rect:
         serializedVersion: 2
-        x: 5
-        y: 7
-        width: 362
-        height: 2041
-      alignment: 9
-      pivot: {x: 0.5, y: 0.00558103}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49aeb29ff007df230800000000000000
-      internalID: 3674216084911418004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Metal Pole
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 11
-        width: 278
-        height: 2036
-      alignment: 9
-      pivot: {x: 0.5295726, y: 0.019487249}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2f7de45be53080b0800000000000000
-      internalID: -5728519441156833491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Door_metal Frame
-      rect:
-        serializedVersion: 2
-        x: 847
-        y: 0
-        width: 802
-        height: 1168
-      alignment: 9
-      pivot: {x: 0.5000001, y: 0.026974466}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30e368ec60b75e130800000000000000
-      internalID: 3595415146690133507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MuruFrontDoor
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 1160
-        width: 840
-        height: 883
+        x: 26
+        y: 905
+        width: 391
+        height: 1122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8305e6b1c2b5d840800000000000000
-      internalID: 5248297485837075341
+      spriteID: 795819d7b029d26a0800000000000000
+      internalID: -6472356511412550249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuruWindowBottles
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1549
+        width: 187
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926abb4e7a3bc8c40800000000000000
+      internalID: 5515981177300428329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muruFront_Granite
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 4
+        width: 1889
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8d388c1ca06b130800000000000000
+      internalID: 3582062381028858107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muru_window
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 647
+        width: 1424
+        height: 1399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a36cd77523c3d060800000000000000
+      internalID: 6977134813419168678
       vertices: []
       indices: 
       edges: []
