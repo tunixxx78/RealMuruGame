@@ -8605,6 +8605,22 @@ PrefabInstance:
       value: EndTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8644210361227572185, guid: 2f8e64051629947a4af05b383c62a9f0, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4745865
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644210361227572185, guid: 2f8e64051629947a4af05b383c62a9f0, type: 3}
+      propertyPath: m_Size.y
+      value: 4.769653
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644210361227572185, guid: 2f8e64051629947a4af05b383c62a9f0, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.57641983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644210361227572185, guid: 2f8e64051629947a4af05b383c62a9f0, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.5922463
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644210361227572185, guid: 2f8e64051629947a4af05b383c62a9f0, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
