@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 985fc16986d58f349811b69c13c3ae39
+guid: 8dde0bf2513effd46a15f6ae350f95bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3674216084911418004
-    second: Stone Pillar
+      213: 5327804499950386235
+    second: Backround
   - first:
-      213: -5728519441156833491
-    second: Metal Pole
+      213: -6653758393328391896
+    second: Servetti
   - first:
-      213: 3595415146690133507
-    second: Door_metal Frame
+      213: 736448843791318924
+    second: WineGlass
   - first:
-      213: 5248297485837075341
-    second: MuruFrontDoor
+      213: -8167750028962966835
+    second: Fork
+  - first:
+      213: 5138997539210911952
+    second: Knife
+  - first:
+      213: -5668440468358775570
+    second: Cup
+  - first:
+      213: -46298120580816194
+    second: Tarjotin
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,8 +67,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 7, y: 902, z: 3, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -80,8 +89,8 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureCompression: 2
+    compressionQuality: 100
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
@@ -92,8 +101,8 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureCompression: 2
+    compressionQuality: 100
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
@@ -101,90 +110,27 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureFormat: 29
+    textureCompression: 2
+    compressionQuality: 100
     crunchedCompression: 1
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stone Pillar
+      name: Backround
       rect:
         serializedVersion: 2
-        x: 5
-        y: 7
-        width: 362
-        height: 2041
-      alignment: 9
-      pivot: {x: 0.5, y: 0.00558103}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49aeb29ff007df230800000000000000
-      internalID: 3674216084911418004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Metal Pole
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 11
-        width: 278
-        height: 2036
-      alignment: 9
-      pivot: {x: 0.5295726, y: 0.019487249}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2f7de45be53080b0800000000000000
-      internalID: -5728519441156833491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Door_metal Frame
-      rect:
-        serializedVersion: 2
-        x: 847
-        y: 0
-        width: 802
-        height: 1168
-      alignment: 9
-      pivot: {x: 0.5000001, y: 0.026974466}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30e368ec60b75e130800000000000000
-      internalID: 3595415146690133507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MuruFrontDoor
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 1160
-        width: 840
-        height: 883
+        x: 7
+        y: 902
+        width: 2038
+        height: 1146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +138,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8305e6b1c2b5d840800000000000000
-      internalID: 5248297485837075341
+      spriteID: b3c354cf6f920f940800000000000000
+      internalID: 5327804499950386235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servetti
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 337
+        width: 206
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82923609ef919a3a0800000000000000
+      internalID: -6653758393328391896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WineGlass
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 400
+        width: 197
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fbd615254683a00800000000000000
+      internalID: 736448843791318924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fork
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 505
+        width: 82
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2d97d8f9256ae80800000000000000
+      internalID: -8167750028962966835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knife
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 505
+        width: 85
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0e54ac803615740800000000000000
+      internalID: 5138997539210911952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cup
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 249
+        width: 131
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecb60d3d67a551b0800000000000000
+      internalID: -5668440468358775570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tarjotin
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 11
+        width: 473
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb22309ca148b5ff0800000000000000
+      internalID: -46298120580816194
       vertices: []
       indices: 
       edges: []

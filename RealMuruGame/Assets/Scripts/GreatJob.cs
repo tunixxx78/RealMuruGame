@@ -9,18 +9,24 @@ public class GreatJob : MonoBehaviour
 
     private void Start()
     {
+        currentPoints = 0;
         pointsToWin = myObjects.transform.childCount;
     }
-    private void Update()
+    /*private void Update()
     {
         if (currentPoints >= pointsToWin)
         {
             transform.GetChild(0).gameObject.SetActive(true);
         }
-    }
+    }*/
 
     public void AddPoints()
     {
         currentPoints++;
+
+        if (currentPoints >= pointsToWin)
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 }
