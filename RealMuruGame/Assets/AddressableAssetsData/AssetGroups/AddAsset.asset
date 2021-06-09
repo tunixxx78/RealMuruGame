@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AddAsset
+  m_EditorClassIdentifier: 
+  m_GroupName: AddAsset
+  m_Data:
+    m_SerializedData: []
+  m_GUID: bbeebb751d81c417ea150170ddddcd26
+  m_SerializeEntries:
+  - m_GUID: 57ea759eebd1c4a7ca600e48cc9c3de5
+    m_Address: Assets/Prefabs/Placeholder prefabs/AddTestPic.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6d7cfe293e917433d8595024f4ae605a
+    m_Address: Assets/Prefabs/PlaceholderPrefabs/winebarrel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0854f5fd0699b4264bfba06312d9bf83, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c485bf6c272794da0bad5bad1d18b25c, type: 2}
+    - {fileID: 11400000, guid: 317b27db38a624fcea2a68aa74bb254c, type: 2}
