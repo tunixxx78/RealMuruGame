@@ -166,3 +166,4 @@ MonoBehaviour:
   rbBottle: {fileID: 1173640458754395400}
   rotationSpeed: 1
   torque: 15
+  winesplashParticle: {fileID: 3837664497533379440, guid: 78d47278f389ed14bbc7d9580a16799a, type: 3}
