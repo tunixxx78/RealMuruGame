@@ -1776,7 +1776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -835146418582875339, guid: 72e0c434f946f2b4e96610931070e624, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.01
+      value: 5.64
       objectReference: {fileID: 0}
     - target: {fileID: -835146418582875339, guid: 72e0c434f946f2b4e96610931070e624, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2418,7 +2418,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463790052}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4440,8 +4440,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -49623561
-  m_SortingLayer: 3
+  m_SortingLayerID: 748283541
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 3066218582805720022, guid: 83f48d66521e45b41b05d525ae1ee102, type: 3}
   m_Color: {r: 0.8207547, g: 0.7651426, b: 0.6929957, a: 1}
@@ -6444,6 +6444,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1347873607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347873604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c56c814866884c8b902c6b1ed7127fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrel: {fileID: 8934690086338183249, guid: 6d7cfe293e917433d8595024f4ae605a, type: 3}
+  spawnTime: 0
+  spawnDelay: 0
+  enemyBarrel: {fileID: 463790052}
+  useAnimEvents: 1
 --- !u!1 &1374468781
 GameObject:
   m_ObjectHideFlags: 0
