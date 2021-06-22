@@ -12,13 +12,7 @@ public class GreatJob : MonoBehaviour
         currentPoints = 0;
         pointsToWin = myObjects.transform.childCount;
     }
-    /*private void Update()
-    {
-        if (currentPoints >= pointsToWin)
-        {
-            transform.GetChild(0).gameObject.SetActive(true);
-        }
-    }*/
+    
 
     public void AddPoints()
     {
@@ -26,7 +20,8 @@ public class GreatJob : MonoBehaviour
 
         if (currentPoints >= pointsToWin)
         {
-            transform.GetChild(0).gameObject.SetActive(true);
+            //transform.GetChild(0).gameObject.SetActive(true);
+            GameObject.Find("Canvas").GetComponent<Animator>().SetTrigger("win");
         }
     }
 }

@@ -6,18 +6,22 @@ using UnityEngine.SceneManagement;
 public class GuestionManager : MonoBehaviour
 {
     [SerializeField] private GameObject menuBoard, starter, maincourse, desert, button1, rightAnswer, rightAnswer2, rightAnswer3, wrongAnswer, wineSelection, speechBubble;
+    public Animator canvasAnimator;
 
     public void LetsPlay()
     {
-        menuBoard.SetActive(false);
         button1.SetActive(false);
+        canvasAnimator.SetTrigger("firstSequence");
+        /*menuBoard.SetActive(false);
+        
         speechBubble.SetActive(false);
         starter.SetActive(true);
-        wineSelection.SetActive(true);
+        wineSelection.SetActive(true);*/
     }
 
     public void ToQuestion2()
     {
+        canvasAnimator.SetTrigger("secondSequence");
         starter.SetActive(false);
         rightAnswer.SetActive(false);
         speechBubble.SetActive(false);
