@@ -344,9 +344,9 @@ RectTransform:
   m_LocalScale: {x: 0.47443965, y: 0.47443965, z: 0.47443965}
   m_Children:
   - {fileID: 1214463998}
+  - {fileID: 316915464}
   - {fileID: 332500389}
   - {fileID: 682009729}
-  - {fileID: 316915464}
   m_Father: {fileID: 1357714856}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 316915463}
   - component: {fileID: 316915462}
   m_Layer: 5
-  m_Name: explanation text part 1 (1)
+  m_Name: explanation text part 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,7 +523,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 312441884}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -705,7 +705,7 @@ GameObject:
   - component: {fileID: 332500391}
   - component: {fileID: 332500390}
   m_Layer: 5
-  m_Name: Winning Text
+  m_Name: Win Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -723,7 +723,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 312441884}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1630,7 +1630,7 @@ RectTransform:
   m_Children:
   - {fileID: 789556125}
   m_Father: {fileID: 312441884}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2637,6 +2637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text1: {fileID: 1214463997}
   text2: {fileID: 316915461}
+  text3: {fileID: 332500388}
   animator: {fileID: 1357714857}
 --- !u!4 &1230066577
 Transform:

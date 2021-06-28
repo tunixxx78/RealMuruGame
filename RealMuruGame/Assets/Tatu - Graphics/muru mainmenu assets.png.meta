@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -1473469103004208933
     second: mainmenuBackround
+  - first:
+      213: -2109004356021270180
+    second: muru mainmenu assets_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,10 +127,10 @@ TextureImporter:
       name: muruGameText
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1643
-        width: 483
-        height: 335
+        x: 27
+        y: 1678
+        width: 584
+        height: 359
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +148,10 @@ TextureImporter:
       name: Play Button
       rect:
         serializedVersion: 2
-        x: 692
-        y: 1799
-        width: 450
-        height: 167
+        x: 675
+        y: 1809
+        width: 696
+        height: 191
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,12 +190,12 @@ TextureImporter:
       name: samu mainmenu
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 1050
-        width: 562
-        height: 984
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1513
+        y: 971
+        width: 532
+        height: 1077
+      alignment: 9
+      pivot: {x: 0.5415654, y: 0.45017198}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,11 +212,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1508
-        y: 44
+        y: 0
         width: 518
-        height: 992
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 967
+      alignment: 9
+      pivot: {x: 0.546382, y: 0.41851845}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,6 +245,27 @@ TextureImporter:
       bones: []
       spriteID: bd0bbe758af2d8be0800000000000000
       internalID: -1473469103004208933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muru mainmenu assets_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1676
+        width: 121
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59c99156bf4bb2e0800000000000000
+      internalID: -2109004356021270180
       vertices: []
       indices: 
       edges: []

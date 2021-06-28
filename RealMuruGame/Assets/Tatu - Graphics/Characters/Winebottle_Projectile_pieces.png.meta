@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 30964a2824c11824c8b802fedd465603
+guid: 6f4e1523b00092f4ea3fe1dca427c234
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8380262974031387407
-    second: muru - inside backround
+      213: -499138236096412906
+    second: Winebottle_Projectile_pieces_0
   - first:
-      213: 1382525489109885
-    second: Mas Irene
+      213: 3873931127929003921
+    second: Winebottle_Projectile_pieces_1
   - first:
-      213: -7248710130035333970
-    second: muru - chalk board
+      213: 834619012709809713
+    second: Winebottle_Projectile_pieces_2
   - first:
-      213: -4311564587610197270
-    second: muru - notificator
+      213: 2612324765911326956
+    second: Winebottle_Projectile_pieces_3
   - first:
-      213: 7411765744307522826
-    second: answer Base
+      213: 3900756440400220975
+    second: Winebottle_Projectile_pieces_4
   - first:
-      213: 2307330371799962940
-    second: Red winebottle
-  - first:
-      213: -2885023313505545820
-    second: Yellow Winebottle
-  - first:
-      213: 469435503136624192
-    second: purple winebottle
+      213: 5422461371510258498
+    second: Winebottle_Projectile_pieces_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +83,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -101,7 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -113,183 +107,141 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: muru - inside backround
+      name: Winebottle_Projectile_pieces_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 856
+        width: 91
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61388a73b64b219f0800000000000000
+      internalID: -499138236096412906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winebottle_Projectile_pieces_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 842
+        width: 113
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f598cf5d7f2c530800000000000000
+      internalID: 3873931127929003921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winebottle_Projectile_pieces_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 545
+        width: 194
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13efa5fe199259b00800000000000000
+      internalID: 834619012709809713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winebottle_Projectile_pieces_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 899
-        width: 2048
-        height: 1149
+        y: 228
+        width: 121
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0bdf7b36ccac4470800000000000000
-      internalID: 8380262974031387407
+      spriteID: ce0a91ea887d04420800000000000000
+      internalID: 2612324765911326956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mas Irene
+      name: Winebottle_Projectile_pieces_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 391
-        width: 319
-        height: 416
-      alignment: 9
-      pivot: {x: 0.57409996, y: 0.97205764}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7bdbac4669e40000800000000000000
-      internalID: 1382525489109885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muru - chalk board
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 253
-        height: 372
+        x: 147
+        y: 238
+        width: 107
+        height: 280
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea4e773ca88676b90800000000000000
-      internalID: -7248710130035333970
+      spriteID: f235f51c055422630800000000000000
+      internalID: 3900756440400220975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muru - notificator
+      name: Winebottle_Projectile_pieces_5
       rect:
         serializedVersion: 2
-        x: 272
-        y: 24
-        width: 37
-        height: 167
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae23759e9de3a24c0800000000000000
-      internalID: -4311564587610197270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: answer Base
-      rect:
-        serializedVersion: 2
-        x: 1280
+        x: 27
         y: 6
         width: 203
-        height: 214
+        height: 217
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0dcbdbdca1ebd660800000000000000
-      internalID: 7411765744307522826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Red winebottle
-      rect:
-        serializedVersion: 2
-        x: 1504
-        y: 1
-        width: 174
-        height: 726
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c355b969fb8450020800000000000000
-      internalID: 2307330371799962940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow Winebottle
-      rect:
-        serializedVersion: 2
-        x: 1681
-        y: 2
-        width: 178
-        height: 725
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a118c5f49656f7d0800000000000000
-      internalID: -2885023313505545820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: purple winebottle
-      rect:
-        serializedVersion: 2
-        x: 1866
-        y: 2
-        width: 182
-        height: 725
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04e4a695a15c38600800000000000000
-      internalID: 469435503136624192
+      spriteID: 24b752153e3704b40800000000000000
+      internalID: 5422461371510258498
       vertices: []
       indices: 
       edges: []

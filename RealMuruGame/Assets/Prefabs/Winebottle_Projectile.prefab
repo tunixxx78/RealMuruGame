@@ -167,3 +167,4 @@ MonoBehaviour:
   rotationSpeed: 1
   torque: 15
   winesplashParticle: {fileID: 3837664497533379440, guid: 78d47278f389ed14bbc7d9580a16799a, type: 3}
+  winebottlepartsParticle: {fileID: 7198033770471072457, guid: af4b24740b6660b4d9fb7dcfd587d80c, type: 3}

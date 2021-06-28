@@ -21,7 +21,17 @@ public class GreatJob : MonoBehaviour
         if (currentPoints >= pointsToWin)
         {
             //transform.GetChild(0).gameObject.SetActive(true);
-            GameObject.Find("Canvas").GetComponent<Animator>().SetTrigger("win");
+            GameObject textController = GameObject.Find("textController");
+
+            if (textController)
+            {
+                textController.GetComponent<tableSceneTextScript>().WinTrigger();
+            }
+            else
+            {
+                Debug.LogWarning("Didn't find gameobject named textController");
+            }
+            
         }
     }
 }

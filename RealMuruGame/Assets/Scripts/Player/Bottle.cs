@@ -8,6 +8,7 @@ public class Bottle : MonoBehaviour
     [SerializeField] private float rotationSpeed = 4f, torque = 1f;
 
     [SerializeField] private GameObject winesplashParticle;
+    [SerializeField] private GameObject winebottlepartsParticle;
 
     private void Update()
     {
@@ -20,6 +21,7 @@ public class Bottle : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Instantiate(winesplashParticle, gameObject.transform.position, Quaternion.Euler(0,0,0));
+        Instantiate(winebottlepartsParticle, gameObject.transform.position, Quaternion.Euler(0, 0, 0));
         Destroy(this.gameObject);
     }
 }
