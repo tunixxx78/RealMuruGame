@@ -1157,10 +1157,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1672,7 +1672,7 @@ RectTransform:
   m_GameObject: {fileID: 611025689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 1567593742}
   m_Father: {fileID: 194700658}
@@ -1759,8 +1759,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5351647808305069682, guid: 7338ee14621f1cc4598f9a6f140ce964, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2545,7 +2545,7 @@ RectTransform:
   m_GameObject: {fileID: 907507879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 346740913}
   m_Father: {fileID: 590228595}
@@ -2632,8 +2632,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5351647808305069682, guid: 7338ee14621f1cc4598f9a6f140ce964, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3701,6 +3701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightanswerBase
       objectReference: {fileID: 0}
+    - target: {fileID: 9159081433920798197, guid: c651b3035dbb55c429a3cbe11a3890bc, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c651b3035dbb55c429a3cbe11a3890bc, type: 3}
 --- !u!1 &1323042298
@@ -4529,7 +4533,7 @@ RectTransform:
   m_GameObject: {fileID: 1461870644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 803522584}
   m_Father: {fileID: 888430756}
@@ -4616,8 +4620,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5351647808305069682, guid: 7338ee14621f1cc4598f9a6f140ce964, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5606,6 +5610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightanswerBase
       objectReference: {fileID: 0}
+    - target: {fileID: 9159081433920798197, guid: c651b3035dbb55c429a3cbe11a3890bc, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c651b3035dbb55c429a3cbe11a3890bc, type: 3}
 --- !u!1 &1744047811
@@ -6427,7 +6435,7 @@ RectTransform:
   m_GameObject: {fileID: 1982459620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 1331743757}
   m_Father: {fileID: 175801343}
@@ -6514,8 +6522,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5351647808305069682, guid: 7338ee14621f1cc4598f9a6f140ce964, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6965,7 +6973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7507,6 +7515,10 @@ PrefabInstance:
     - target: {fileID: 4110406835465466024, guid: c651b3035dbb55c429a3cbe11a3890bc, type: 3}
       propertyPath: m_Name
       value: RightanswerBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159081433920798197, guid: c651b3035dbb55c429a3cbe11a3890bc, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c651b3035dbb55c429a3cbe11a3890bc, type: 3}
