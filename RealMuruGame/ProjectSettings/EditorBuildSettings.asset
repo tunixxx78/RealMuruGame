@@ -16,7 +16,10 @@ EditorBuildSettings:
     guid: 8850f4b76c70f41f9ab7e2ad1deabbf6
   - enabled: 1
     path: Assets/Scenes/GameLevelTaneli.unity
-    guid: 2e91d9fc6a8b649b88700861de66c40f
+    guid: 5bd09f2ec169d4b9285e7a4d7a7fa04a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Table.unity
     guid: 932ccf2f71a954a5aa144cd0d697e59c

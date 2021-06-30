@@ -8,7 +8,7 @@ public class Link : MonoBehaviour
 	public void OpenLink()
 	{
 		#if !UNITY_EDITOR
-		openWindow("http://www.youtube.com");
+		openWindow("http://www.murudining.fi");
 		#endif
 	}
 
