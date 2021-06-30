@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealthBar : MonoBehaviour
 {
     [SerializeField] private GameObject Enemy;
+    [SerializeField] Animator enemyAnimator;
     public int maxHealth = 100, currentHealth;
 
     public HealthBar healthBar;
@@ -49,6 +50,7 @@ public class EnemyHealthBar : MonoBehaviour
     {
         if (collision.collider.CompareTag("Bottle"))
         {
+            enemyAnimator.SetTrigger("damage");
             TakeDamage(10);
 
         }

@@ -6,6 +6,7 @@ public class BarrelSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject barrel;
     [SerializeField] private float spawnTime, spawnDelay;
+    [SerializeField] Animator enemyAnimator;
 
     //barrel inside enemy character hierarcy
     [SerializeField] private GameObject enemyBarrel;
@@ -19,7 +20,12 @@ public class BarrelSpawner : MonoBehaviour
         {
             InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
         }
-        
+        Invoke("Attack", 1.5f);
+    }
+
+    private void KeepAttacking()
+    {
+        Invoke("Attack", 1.5f);
     }
 
     public void SpawnObject()
@@ -39,7 +45,11 @@ public class BarrelSpawner : MonoBehaviour
         CancelInvoke("SpawnObject");
     }
 
-
+    private void Attack()
+    {
+        enemyAnimator.SetTrigger("Attack");
+        Invoke("KeepAttacking", 1.5f);
+    }
     
     
 }
