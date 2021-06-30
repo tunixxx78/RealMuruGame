@@ -22,9 +22,9 @@ MonoBehaviour:
   m_maxConcurrentWebRequests: 500
   m_ContiguousBundles: 0
   m_RemoteCatalogBuildPath:
-    m_Id: 811de335a2570454b9dce76e87dd03be
+    m_Id: 284c9f9ab4ce247fab9a6d419dd2c328
   m_RemoteCatalogLoadPath:
-    m_Id: b9f7283bebef1467e994ed967fd0cdf8
+    m_Id: 51c8ece59959e465082fa37d1f65c0f1
   m_overridePlayerVersion: 
   m_GroupAssets:
   - {fileID: 11400000, guid: 4021558514edd46a69440a154b872dc6, type: 2}
