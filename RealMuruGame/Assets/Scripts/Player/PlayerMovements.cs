@@ -23,6 +23,7 @@ public class PlayerMovements : MonoBehaviour
         {
             Application.Quit();
         }
+        
     }
 
     public void Move()
@@ -56,7 +57,7 @@ public class PlayerMovements : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
-            playerAnimator.SetTrigger("Jump");
+            //playerAnimator.SetTrigger("Jump");
             rbPlayer.velocity = new Vector2(rbPlayer.velocity.x, jumpForce);
         }
         if (isGrounded == false)
@@ -64,6 +65,10 @@ public class PlayerMovements : MonoBehaviour
             
         }
         CheckIfGrounded();
+        
+        playerAnimator.SetBool("InAir", rbPlayer.velocity.y != 0);
+        //playerAnimator.SetBool("InAir", false);
+        
     }
 
     private void CheckIfGrounded()
@@ -74,10 +79,12 @@ public class PlayerMovements : MonoBehaviour
         {
             
             isGrounded = true;
+            
         }
         else
         {
             isGrounded = false;
+            
         }
     }
 
@@ -93,7 +100,15 @@ public class PlayerMovements : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+   /* private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            enemyHealthBar.SetActive(true);
+        }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {

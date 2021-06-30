@@ -9,9 +9,14 @@ public class LevelEndTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            SceneManager.LoadScene(4);
+            //SceneManager.LoadScene(4);
+            Invoke("loadScene", 1);
+            GameObject.Find("Main Camera").GetComponent<Animator>().SetTrigger("fade");
         }
     }
 
-    
+    private void loadScene()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
