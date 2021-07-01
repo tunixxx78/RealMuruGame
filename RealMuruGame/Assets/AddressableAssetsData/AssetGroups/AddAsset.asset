@@ -21,10 +21,22 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Placeholder prefabs/AddTestPic.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2260793721406283711, guid: 57ea759eebd1c4a7ca600e48cc9c3de5, type: 3}
+    m_TargetAsset: {fileID: 2260793721406283711, guid: 57ea759eebd1c4a7ca600e48cc9c3de5, type: 3}
   - m_GUID: 6d7cfe293e917433d8595024f4ae605a
     m_Address: Assets/Prefabs/PlaceholderPrefabs/winebarrel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8934690086338183249, guid: 6d7cfe293e917433d8595024f4ae605a, type: 3}
+    m_TargetAsset: {fileID: 8934690086338183249, guid: 6d7cfe293e917433d8595024f4ae605a, type: 3}
+  - m_GUID: 1cc59578de09649029ca1daa9cdbcfde
+    m_Address: Assets/Graphics/PicturesForAddScreen/FirstAddTest.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f6703d86733554294b7a64fd9784c6a7
+    m_Address: Assets/Prefabs/PlaceholderPrefabs/FirstAddTest.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
