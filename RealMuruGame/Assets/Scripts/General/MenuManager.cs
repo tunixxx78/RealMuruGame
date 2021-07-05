@@ -22,9 +22,11 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(2);
         //PlayerPrefs.SetInt("CharacterIndex", characterIndex);
+        SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
     }
     public void StartGameTaneli()
     {
         SceneManager.LoadScene(3);
+        SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
     }
 }

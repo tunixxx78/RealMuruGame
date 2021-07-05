@@ -23,5 +23,6 @@ public class Bottle : MonoBehaviour
         Instantiate(winesplashParticle, gameObject.transform.position, Quaternion.Euler(0,0,0));
         Instantiate(winebottlepartsParticle, gameObject.transform.position, Quaternion.Euler(0, 0, 0));
         Destroy(this.gameObject);
+        SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.bottle);
     }
 }

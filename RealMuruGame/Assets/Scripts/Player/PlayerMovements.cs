@@ -59,6 +59,7 @@ public class PlayerMovements : MonoBehaviour
         {
             //playerAnimator.SetTrigger("Jump");
             rbPlayer.velocity = new Vector2(rbPlayer.velocity.x, jumpForce);
+            SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.jump);
         }
         if (isGrounded == false)
         {
@@ -126,5 +127,10 @@ public class PlayerMovements : MonoBehaviour
     private void Shoot()
     {
         FindObjectOfType<Thrower>().Shoot();
+    }
+
+    public void RunSound()
+    {
+        FindObjectOfType<SFXManager>().WalkSounds();
     }
 }

@@ -10,12 +10,15 @@ public class chalkboardClickScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-
+        
         //brings up the UI canvas w/ animation
         CanvasAnimator.SetTrigger("click");
+        
 
         //stops shaking animation
         this.GetComponent<Animator>().SetTrigger("click");
         alertIcon.SetActive(false);
+
+        SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
     }
 }

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerHealthbar : MonoBehaviour
 {
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject gameOverScreen;
     public int maxHealth = 100, currentHealth;
 
     public HealthBar playerHealthBar;
@@ -20,7 +22,9 @@ public class PlayerHealthbar : MonoBehaviour
     {
         if (currentHealth <= 0f)
         {
-            Destroy(gameObject, 1f);
+            gameOverScreen.SetActive(true);
+            Destroy(gameObject, 1.5f);
+            
         }
     }
 
@@ -37,9 +41,11 @@ public class PlayerHealthbar : MonoBehaviour
     {
         if (collision.collider.CompareTag("Barrel"))
         {
+            FindObjectOfType<SFXManager>().TakeHit();
             TakeDamage(10);
 
         }
 
     }
+    
 }

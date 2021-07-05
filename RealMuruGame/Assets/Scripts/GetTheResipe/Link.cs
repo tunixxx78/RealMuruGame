@@ -10,9 +10,12 @@ public class Link : MonoBehaviour
 		#if !UNITY_EDITOR
 		openWindow("http://www.murudining.fi");
 		#endif
+		SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
 	}
 
 	[DllImport("__Internal")]
 	private static extern void openWindow(string url);
+
+	
 
 }

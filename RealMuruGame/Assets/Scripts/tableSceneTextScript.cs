@@ -20,15 +20,18 @@ public class tableSceneTextScript : MonoBehaviour
             case 0:
                 text1.SetActive(false);
                 text2.SetActive(true);
+                SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
                 buttonpresses++;
                 break;
             case 1:
                 animator.SetTrigger("transition");
+                SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
                 buttonpresses++;
                 break;
             case 2:
                 //GameObject.Find("GameManager").GetComponent<GameManager>().G
                 //buttonpresses++;
+                SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
                 FindObjectOfType<GameManager>().GoToNextScene();
                 break;
 

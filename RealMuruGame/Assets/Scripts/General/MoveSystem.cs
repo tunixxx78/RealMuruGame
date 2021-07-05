@@ -57,6 +57,7 @@ public class MoveSystem : MonoBehaviour
             finish = true;
             GameObject.Find("PointsHandler").GetComponent<GreatJob>().AddPoints();
             GetComponentInChildren<ParticleSystem>().Play();
+            FindObjectOfType<SFXManager>().CorrectMoveSound();
         }
         else
         {
