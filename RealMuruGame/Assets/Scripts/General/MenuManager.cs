@@ -7,6 +7,8 @@ public class MenuManager : MonoBehaviour
 {
     public Animator taneliAnimator;
     public Animator SamuilAnimator;
+    private int samu = 0;
+    private int taneli = 1;
 
     
 
@@ -29,6 +31,7 @@ public class MenuManager : MonoBehaviour
         Invoke("LoadSamuScene", 2);
         SamuilAnimator.SetBool("Run", true);
         //PlayerPrefs.SetInt("CharacterIndex", characterIndex);
+        PlayerPrefs.SetInt("Character", samu);
         SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
     }
     public void StartGameTaneli()
@@ -36,6 +39,7 @@ public class MenuManager : MonoBehaviour
         //SceneManager.LoadScene(3);
         Invoke("LoadTaneliScene", 2);
         taneliAnimator.SetBool("Run", true);
+        PlayerPrefs.SetInt("Character", taneli);
         SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
     }
 
