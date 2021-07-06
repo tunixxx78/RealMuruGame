@@ -6,7 +6,7 @@ using UnityEngine;
 public class Thrower : MonoBehaviour
 {
     [SerializeField] private GameObject bottle, point, canShoot, cantShoot, player;
-    [SerializeField] private float launchForce, bottleLifeSpawn = 0.5f, spaceBetweenPoints, fireRate = 1f;
+    [SerializeField] private float launchForce, bottleLifeSpawn = 5f, spaceBetweenPoints, fireRate = 1f;
     [SerializeField] private Transform shotPoint;
     [SerializeField] private Animator attackAnimator;
     
@@ -65,7 +65,7 @@ public class Thrower : MonoBehaviour
         newBottle.GetComponent<Rigidbody2D>().velocity = (-transform.right + Vector3.up) * launchForce;
         if (newBottle)
         {
-            Destroy(newBottle, bottleLifeSpawn);
+            Destroy(newBottle, 4f);
         }
     }
 
