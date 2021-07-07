@@ -51,8 +51,9 @@ public class EnemyHealthBar : MonoBehaviour
         if (collision.collider.CompareTag("Bottle"))
         {
             enemyAnimator.SetTrigger("damage");
-            FindObjectOfType<SFXManager>().TakeHit();
             TakeDamage(10);
+            FindObjectOfType<SFXManager>().TakeHit();
+            
 
         }
         

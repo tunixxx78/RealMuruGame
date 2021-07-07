@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 7338ee14621f1cc4598f9a6f140ce964
+guid: ec4ee0c3e260f6543921a781204f3ba9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4578454394437356409
-    second: Textbox - horizontal
+      213: -231969184171963017
+    second: HealthbarBottle
   - first:
-      213: 5351647808305069682
-    second: muru - Button
-  - first:
-      213: -4881664419923167615
-    second: textbox - bubble
-  - first:
-      213: 4472515177187689117
-    second: textbox-assets_3
+      213: -5862483104692838798
+    second: HealthbarBottleFill
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -77,10 +71,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -89,10 +83,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,10 +95,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Textbox - horizontal
+      name: HealthbarBottle
       rect:
         serializedVersion: 2
-        x: 11
-        y: 0
-        width: 1621
-        height: 358
+        x: 6
+        y: 5
+        width: 126
+        height: 414
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,71 +123,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97bc3c89300f98f30800000000000000
-      internalID: 4578454394437356409
+      spriteID: 77dc79a8141e7ccf0800000000000000
+      internalID: -231969184171963017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muru - Button
+      name: HealthbarBottleFill
       rect:
         serializedVersion: 2
-        x: 1657
-        y: 4
-        width: 384
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 140
+        y: 6
+        width: 109
+        height: 248
+      alignment: 9
+      pivot: {x: 0.49461952, y: 0.0010042229}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e7501d35fd44a40800000000000000
-      internalID: 5351647808305069682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: textbox - bubble
-      rect:
-        serializedVersion: 2
-        x: 718
-        y: 389
-        width: 610
-        height: 487
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 186f0d10318d04cb0800000000000000
-      internalID: -4881664419923167615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: textbox-assets_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 372
-        width: 674
-        height: 278
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d92c0d47bd0911e30800000000000000
-      internalID: 4472515177187689117
+      spriteID: 27edd035da644aea0800000000000000
+      internalID: -5862483104692838798
       vertices: []
       indices: 
       edges: []
