@@ -58,6 +58,23 @@ public class Thrower : MonoBehaviour
         }*/
     }
 
+    public void ThrowNow()
+    {
+        if(Time.time >= nextFire && player.transform.localScale.x != -1f)
+        {
+            attackAnimator.SetTrigger("Attack");
+            canShoot.SetActive(false);
+            cantShoot.SetActive(true);
+            nextFire = Time.time + fireRate;
+        }
+
+        if (Time.time >= nextFire)
+        {
+            cantShoot.SetActive(false);
+            canShoot.SetActive(true);
+        }
+    }
+
     public void Shoot()
     {
         //attackAnimator.SetTrigger("Attack");

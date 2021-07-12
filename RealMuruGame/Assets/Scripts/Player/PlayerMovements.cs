@@ -11,14 +11,25 @@ public class PlayerMovements : MonoBehaviour
     [SerializeField] private Transform groundPoint;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator playerAnimator;
+    private JoystickManager _joystickManager;
+    
+
+  
+    
     private bool isGrounded = false;
+
+    private void Start()
+    {
+        _joystickManager = GameObject.Find("JoystickBackground").GetComponent<JoystickManager>();
+    }
 
     private void Update()
     {
+        
         Move();
         Jump();
         CheckIfGrounded();
-        //BetterJump();
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
@@ -26,9 +37,11 @@ public class PlayerMovements : MonoBehaviour
         
     }
 
+
     public void Move()
     {
-        float x = Input.GetAxisRaw("Horizontal");
+        //float x = Input.GetAxisRaw("Horizontal");
+        float x = _joystickManager.inputHorizontal();
         float moveBy = x * speed;
         rbPlayer.velocity = new Vector2(moveBy, rbPlayer.velocity.y);
 
@@ -47,10 +60,6 @@ public class PlayerMovements : MonoBehaviour
             
         }
         transform.localScale = characterScale;
-    }
-    public void DirectionOfCharacter()
-    {
-
     }
 
     private void Jump()
@@ -71,6 +80,23 @@ public class PlayerMovements : MonoBehaviour
         //playerAnimator.SetBool("InAir", false);
         
     }
+    public void JumpNow()
+    {
+        if(isGrounded)
+        {
+            rbPlayer.velocity = new Vector2(rbPlayer.velocity.x, jumpForce);
+            SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.jump);
+        }
+        
+
+        if (isGrounded == false)
+        {
+
+        }
+        CheckIfGrounded();
+
+        playerAnimator.SetBool("InAir", rbPlayer.velocity.y != 0);
+    }
 
     private void CheckIfGrounded()
     {
@@ -88,26 +114,6 @@ public class PlayerMovements : MonoBehaviour
             
         }
     }
-
-    private void BetterJump()
-    {
-        if (rbPlayer.velocity.y < 0)
-        {
-            rbPlayer.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
-        }
-        if (rbPlayer.velocity.y > 0 && !Input.GetKey(KeyCode.W))
-        {
-            rbPlayer.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
-        }
-    }
-
-   /* private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Enemy"))
-        {
-            enemyHealthBar.SetActive(true);
-        }
-    }*/
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -132,5 +138,10 @@ public class PlayerMovements : MonoBehaviour
     public void RunSound()
     {
         FindObjectOfType<SFXManager>().WalkSounds();
+    }
+
+    public void MobileThrow()
+    {
+        FindObjectOfType<Thrower>().ThrowNow();
     }
 }

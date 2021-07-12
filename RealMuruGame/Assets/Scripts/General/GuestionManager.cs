@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GuestionManager : MonoBehaviour
 {
-    [SerializeField] private GameObject menuBoard, starter, maincourse, desert, button1, rightAnswer, rightAnswer2, rightAnswer3, wrongAnswer, wineSelection, speechBubble;
+    [SerializeField] private GameObject menuBoard, starter, maincourse, desert, button1, rightAnswer, rightAnswer2, rightAnswer3, wrongAnswer, wrongAnswer2, wrongAnswer3, wineSelection, speechBubble,
+        question1, question2, question3;
     public Animator canvasAnimator;
 
     public void LetsPlay()
@@ -82,10 +83,53 @@ public class GuestionManager : MonoBehaviour
         SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
     }
 
+    public void WrongAnswer2()
+    {
+        speechBubble.SetActive(true);
+        wrongAnswer2.SetActive(true);
+        SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
+    }
+
+    public void WrongAnswer3()
+    {
+        speechBubble.SetActive(true);
+        wrongAnswer3.SetActive(true);
+        SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
+    }
+
     public void TryAgain()
     {
         speechBubble.SetActive(false);
         wrongAnswer.SetActive(false);
         SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
+    }
+
+    public void TryAgainTwo()
+    {
+        speechBubble.SetActive(false);
+        wrongAnswer2.SetActive(false);
+        SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
+    }
+
+    public void TryAgainThree()
+    {
+        speechBubble.SetActive(false);
+        wrongAnswer3.SetActive(false);
+        SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
+    }
+
+    public void WrongOne()
+    {
+        question1.SetActive(true);
+    }
+
+    public void WrongTwo()
+    {
+        question2.SetActive(true);
+    }
+
+    public void WrongThree()
+    {
+        question3.SetActive(true);
     }
 }
