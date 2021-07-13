@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovements : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rbPlayer;
-    [SerializeField] private GameObject player, enemyHealthBar;
+    [SerializeField] private GameObject player, enemyHealthBar, mobileControls;
     [SerializeField] private float speed = 1f, jumpForce = 1f, checkGroundRadius;
     [SerializeField] private Transform groundPoint;
     [SerializeField] private LayerMask groundLayer;
@@ -34,7 +34,15 @@ public class PlayerMovements : MonoBehaviour
         {
             Application.Quit();
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            mobileControls.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            mobileControls.SetActive(false);
+        }
     }
 
 

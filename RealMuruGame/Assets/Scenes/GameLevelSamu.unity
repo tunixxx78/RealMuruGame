@@ -5567,11 +5567,10 @@ MonoBehaviour:
   rbPlayer: {fileID: 1063720755}
   player: {fileID: 1063720750}
   enemyHealthBar: {fileID: 835326233}
+  mobileControls: {fileID: 896274990}
   speed: 5
   jumpForce: 10
   checkGroundRadius: 0.2
-  lowJumpMultiplier: 2
-  fallMultiplier: 2.5
   groundPoint: {fileID: 1399040873}
   groundLayer:
     serializedVersion: 2
