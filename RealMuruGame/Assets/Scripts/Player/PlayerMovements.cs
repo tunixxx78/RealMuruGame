@@ -48,13 +48,14 @@ public class PlayerMovements : MonoBehaviour
         playerAnimator.SetBool("Run", x != 0f);
 
         Vector3 characterScale = transform.localScale;
-        if (Input.GetAxis("Horizontal") > 0)
+        
+        if (x > 0)
         {
            
             characterScale.x = 1f;
             
         }
-        if (Input.GetAxis("Horizontal") < 0)
+        if (x < 0)
         {
             characterScale.x = -1f;
             
