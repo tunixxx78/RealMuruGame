@@ -28,20 +28,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
         SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
     }
-
-    
-
-   
-    //[SerializeField] private GameObject[] characterPrefabs;
-
-    /*private void Start()
-    {
-        LoadCharacter();
-    }
-    public void LoadCharacter()
-    {
-        int characterIndex = PlayerPrefs.GetInt("CharacterIndex");
-        //Instantiate(characterPrefabs[characterIndex]);
-        
-    }*/
 }

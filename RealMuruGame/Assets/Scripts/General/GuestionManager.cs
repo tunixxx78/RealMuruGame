@@ -14,11 +14,6 @@ public class GuestionManager : MonoBehaviour
         button1.SetActive(false);
         canvasAnimator.SetTrigger("firstSequence");
         SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
-        /*menuBoard.SetActive(false);
-        
-        speechBubble.SetActive(false);
-        starter.SetActive(true);
-        wineSelection.SetActive(true);*/
     }
 
     public void ToQuestion2()

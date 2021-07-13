@@ -7,7 +7,7 @@ public class PlayerMovements : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rbPlayer;
     [SerializeField] private GameObject player, enemyHealthBar;
-    [SerializeField] private float speed = 1f, jumpForce = 1f, checkGroundRadius, lowJumpMultiplier = 2f, fallMultiplier = 2.5f;
+    [SerializeField] private float speed = 1f, jumpForce = 1f, checkGroundRadius;
     [SerializeField] private Transform groundPoint;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator playerAnimator;
@@ -40,7 +40,6 @@ public class PlayerMovements : MonoBehaviour
 
     public void Move()
     {
-        //float x = Input.GetAxisRaw("Horizontal");
         float x = _joystickManager.inputHorizontal();
         float moveBy = x * speed;
         rbPlayer.velocity = new Vector2(moveBy, rbPlayer.velocity.y);
@@ -67,7 +66,6 @@ public class PlayerMovements : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
-            //playerAnimator.SetTrigger("Jump");
             rbPlayer.velocity = new Vector2(rbPlayer.velocity.x, jumpForce);
             SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.jump);
         }
@@ -78,7 +76,6 @@ public class PlayerMovements : MonoBehaviour
         CheckIfGrounded();
         
         playerAnimator.SetBool("InAir", rbPlayer.velocity.y != 0);
-        //playerAnimator.SetBool("InAir", false);
         
     }
     public void JumpNow()

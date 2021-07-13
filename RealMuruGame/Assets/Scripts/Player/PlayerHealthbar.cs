@@ -40,9 +40,7 @@ public class PlayerHealthbar : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Barrel"))
-        {
-            
-            
+        {           
             TakeDamage(10);
             FindObjectOfType<SFXManager>().TakeHit();
 

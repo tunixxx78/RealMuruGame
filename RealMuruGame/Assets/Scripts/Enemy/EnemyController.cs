@@ -6,36 +6,17 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rbEnemy;
     [SerializeField] private GameObject player, normalSpawner, rageSpawner;
-    [SerializeField] private float speed = 1f, jumpForce = 2.5f, checkGroundRadius;
+    [SerializeField] private float jumpForce = 2.5f, checkGroundRadius;
     [SerializeField] private Transform groundPoint;
     [SerializeField] private LayerMask groundLayer;
     private bool isGrounded = false;
 
     private void Update()
     {
-        //Move();
         JumpLower();
         CheckIfGrounded();
 
     }
-
-    /*private void Move()
-    {
-        float x = Input.GetAxisRaw("Horizontal");
-        float moveBy = x * speed;
-        rbEnemy.velocity = new Vector2(moveBy, rbEnemy.velocity.y);
-
-        Vector3 characterScale = transform.localScale;
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            characterScale.x = 1f;
-        }
-        if (Input.GetAxis("Horizontal") < 0)
-        {
-            characterScale.x = -1f;
-        }
-        transform.localScale = characterScale;
-    }*/
 
     public void JumpLower()
     {
@@ -73,23 +54,4 @@ public class EnemyController : MonoBehaviour
     {
         rageSpawner.SetActive(true);
     }
-    /*private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            normalSpawner.SetActive(false);
-            rageSpawner.SetActive(true);
-            Jump();
-        }
-        
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            FindObjectOfType<BarrelSpawner>().StopSpawning();
-            normalSpawner.SetActive(false);
-            rageSpawner.SetActive(false);
-        }
-    }*/
 }

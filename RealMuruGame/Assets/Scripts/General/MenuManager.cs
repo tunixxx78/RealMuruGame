@@ -10,33 +10,16 @@ public class MenuManager : MonoBehaviour
     private int samu = 0;
     private int taneli = 1;
 
-    
-
-    /*[SerializeField] private GameObject[] characters;
-    //private int characterIndex;
-
-    public void ChangeCharacter(int index)
-    {
-        for (int i = 0; i < characters.Length; i++)
-        {
-            characters[i].SetActive(false);
-        }
-        //this.characterIndex = index;
-        characters[index].SetActive(true);
-    }*/
 
     public void StartGameSamu()
     {
-        //SceneManager.LoadScene(2);
         Invoke("LoadSamuScene", 2);
         SamuilAnimator.SetBool("Run", true);
-        //PlayerPrefs.SetInt("CharacterIndex", characterIndex);
         PlayerPrefs.SetInt("Character", samu);
         SFXManager.sfxInsrtance.Audio.PlayOneShot(SFXManager.sfxInsrtance.button);
     }
     public void StartGameTaneli()
     {
-        //SceneManager.LoadScene(3);
         Invoke("LoadTaneliScene", 2);
         taneliAnimator.SetBool("Run", true);
         PlayerPrefs.SetInt("Character", taneli);
