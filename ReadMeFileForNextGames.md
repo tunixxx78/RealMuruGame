@@ -3,9 +3,9 @@
 MuruGame (5.2021 - 7.2021)
 
 This is my first solo project in webgl format.
-Done by my classmate (graphic artist) Tatu Uusitalo
+Done with my classmate (graphic artist) Tatu Uusitalo
 
-Code made my me, all graphical elements made by Tatu.
+Code made by me and all graphical elements made by Tatu.
 
 Idea of this project was to make a fun little game for Restaurant Muru's website. It purpose is to be something fun/funny and also 
 a different kind of platform to add some advertisement on website.
