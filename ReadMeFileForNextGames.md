@@ -6,6 +6,7 @@ This is my first solo project in webgl format.
 Done with my classmate (graphic artist) Tatu Uusitalo
 
 Code made by me and all graphical elements made by Tatu.
+My other responsipilities beside to be programmer was gamedesigner, music and sound effects, customer contacts.
 
 Idea of this project was to make a fun little game for Restaurant Muru's website. It purpose is to be something fun/funny and also 
 a different kind of platform to add some advertisement on website.
